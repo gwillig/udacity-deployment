@@ -5,6 +5,7 @@
 *.pyo
 env/
 env*
+.env
 dist/
 build/
 *.egg
@@ -16,7 +17,7 @@ _mailinglist
 .idea/
 docs/_build/
 __pycache__
-
+.vscode
 # Coverage reports
 htmlcov/
 .coverage
