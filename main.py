@@ -67,7 +67,7 @@ def health():
 @APP.route('/ping', methods=['GET'])
 def ping():
     return jsonify({
-        'pong': 'pingpong'
+        'pong': 'pingpongping'
     })
 
 
