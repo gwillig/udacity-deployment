@@ -633,8 +633,8 @@
 							{
 								"key": "Content-Type",
 								"name": "Content-Type",
-								"value": "application/json",
-								"type": "text"
+								"type": "text",
+								"value": "application/json"
 							}
 						],
 						"body": {
@@ -647,9 +647,14 @@
 							}
 						},
 						"url": {
-							"raw": "{{host_local}}/auth",
+							"raw": "http://a4d5c5647129311ea8d420a22cf9d500-2039112863.eu-west-1.elb.amazonaws.com/auth",
+							"protocol": "http",
 							"host": [
-								"{{host_local}}"
+								"a4d5c5647129311ea8d420a22cf9d500-2039112863",
+								"eu-west-1",
+								"elb",
+								"amazonaws",
+								"com"
 							],
 							"path": [
 								"auth"
@@ -743,7 +748,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzYyMzczMTcsIm5iZiI6MTU3NTAyNzcxNywiZW1haWwiOiJ0ZXN0QHRlc3QuY29tIn0.qlgRiWMlwA6UwvrLB1jBEwak1LzRomRoYlz-IOYrhjI",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzYyNTk0NTMsIm5iZiI6MTU3NTA0OTg1MywiZW1haWwiOiJ0ZXN0QHRlc3QuY29tIn0.0ND39magh6HmSvYTQgZpVeRDFZepidPomAxFfjgr-7c",
 									"type": "string"
 								}
 							]
@@ -843,13 +848,13 @@
 	],
 	"variable": [
 		{
-			"id": "9c46b634-42ca-4556-9f3b-214d5679297f",
+			"id": "3661aa65-9e2b-4ce0-9e1f-bdb205108bb0",
 			"key": "host_local",
 			"value": "http://127.0.0.1:8080",
 			"type": "string"
 		},
 		{
-			"id": "b3d9ac84-89df-4018-b4e1-bb1ecb69aa19",
+			"id": "0aee2fa0-166e-4396-8a7d-9a1377d96f52",
 			"key": "host_container",
 			"value": "http://0.0.0.0:80",
 			"type": "string"
