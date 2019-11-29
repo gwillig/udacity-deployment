@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 JWT_SECRET = os.getenv('JWT_SECRET')
-LOG_LEVEL = os.getenv('LOG_LEVEL')
+LOG_LEVEL = 'DEBUG'
 
 
 def _logger():
