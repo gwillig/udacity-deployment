@@ -9,10 +9,10 @@ import jwt
 
 # pylint: disable=import-error
 from flask import Flask, jsonify, request, abort
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
-load_dotenv()
-JWT_SECRET = os.getenv('JWT_SECRET')
+# load_dotenv()
+JWT_SECRET = os.environ.get('JWT_SECRET')
 LOG_LEVEL = 'DEBUG'
 
 
