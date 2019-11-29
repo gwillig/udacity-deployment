@@ -12,7 +12,7 @@ from flask import Flask, jsonify, request, abort
 # from dotenv import load_dotenv
 
 # load_dotenv()
-JWT_SECRET = os.environ.get('JWT_SECRET')
+JWT_SECRET = os.environ.get('JWT_SECRET', 'abc123abc1234')
 LOG_LEVEL = 'DEBUG'
 
 
